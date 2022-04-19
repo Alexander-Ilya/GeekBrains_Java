@@ -1,6 +1,6 @@
 package ru.gb.ilyashuk.homework2;
 
-public class Task1 {
+public class Task2 {
     //1
     public static boolean sumWithIn(int a, int b) {
         return (a + b >= 10 && a + b <= 20);
