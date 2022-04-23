@@ -24,7 +24,7 @@ public class game_XO {
         while (true) {
             humanTurn();
             printMap();
-            if (checkStringInString(DOT_X)) {
+            if (checkWin(DOT_X)) {
                 System.out.println("Победил человек");
                 break;
             }
@@ -34,7 +34,7 @@ public class game_XO {
             }
             aiTurn();
             printMap();
-            if (checkStringInString(DOT_O)) {
+            if (checkWin(DOT_O)) {
                 System.out.println("Победил Искусственный Интеллект");
                 break;
             }
@@ -57,7 +57,7 @@ public class game_XO {
 
     }
 
-    public static boolean checkStringInString(char symb) {
+    public static boolean checkWin(char symb) {
         char[] arrayDot = new char[dots_to_win];
         char[] tempVertical = new char[size];
         char[] tempDiagonalUpDown = new char[size];
