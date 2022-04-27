@@ -48,7 +48,6 @@ public class Employee {
     }
 
     public void setAge(int age) {
-        System.out.println("enter");
         if (age >= 0 && age < 150) {
             this.age = age;
         } else{
@@ -84,7 +83,12 @@ public class Employee {
         this.emailAddress = emailAddress;
         this.phoneNumber = phoneNumber;
         this.salary = salary;
-        this.age = age;// здесь тоже нужна проверка возраста
+
+        if (age >= 0 && age < 150) {
+            this.age = age;
+        } else{
+            System.out.println("Возраст не корректен");
+        }
         System.out.println(this);
 
     }
