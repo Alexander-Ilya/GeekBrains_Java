@@ -10,7 +10,6 @@ public class Employee {
     private int age;
 
 
-
     public String getFirstName() {
         return firstName;
     }
@@ -50,7 +49,7 @@ public class Employee {
     public void setAge(int age) {
         if (age >= 0 && age < 150) {
             this.age = age;
-        } else{
+        } else {
             System.out.println("Возраст не корректен");
         }
 
@@ -83,12 +82,12 @@ public class Employee {
         this.emailAddress = emailAddress;
         this.phoneNumber = phoneNumber;
         this.salary = salary;
-
-        if (age >= 0 && age < 150) {
-            this.age = age;
-        } else{
-            System.out.println("Возраст не корректен");
-        }
+        setAge(age);
+//        if (age >= 0 && age < 150) {
+//            this.age = age;
+//        } else{
+//            System.out.println("Возраст не корректен");
+//        }
         System.out.println(this);
 
     }
