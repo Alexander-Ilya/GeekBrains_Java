@@ -5,10 +5,18 @@ import java.io.PrintStream;
 public class Dog extends Animal
 {
 
-    static int countDog;
-    static int countDogIsFinish;
+    private static int countDog;
+    private static int countDogIsFinish;
     int maxRun = 500;
     int maxSwim = 10;
+
+    public static int getCountDog() {
+        return countDog;
+    }
+
+    public static int getCountDogIsFinish() {
+        return countDogIsFinish;
+    }
 
     public Dog(String name) {
         super(name);

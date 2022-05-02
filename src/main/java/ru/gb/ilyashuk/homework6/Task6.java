@@ -15,11 +15,11 @@ public class Task6 {
         dogKabzdoh.swim((int) (1.0 + Math.random() * (double) dogKabzdoh.maxSwim * 2.0));
         catBarsik.run((int) (1.0 + Math.random() * (double) catBarsik.maxRun * 2.0));
         catBarsik.swim(0);
-        System.out.println("Количество животных: " + Animal.countAnimal);
-        System.out.println("Количество собак: " + Dog.countDog);
-        System.out.println("Количество котов: " + Cat.countCat);
-        System.out.println("Количество  преодолённых препятствий собаками: " + Dog.countDogIsFinish);
-        System.out.println("Количество  преодолённых препятствий котами: " + Cat.countCatIsFinish);
+        System.out.println("Количество животных: " + Animal.getCountAnimal());
+        System.out.println("Количество собак: " + Dog.getCountDog());
+        System.out.println("Количество котов: " + Cat.getCountCat());
+        System.out.println("Количество  преодолённых препятствий собаками: " + Dog.getCountDogIsFinish());
+        System.out.println("Количество  преодолённых препятствий котами: " + Cat.getCountCatIsFinish());
     }
 }
 
