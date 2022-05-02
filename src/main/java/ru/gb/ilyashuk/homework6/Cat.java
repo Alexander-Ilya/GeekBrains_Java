@@ -2,9 +2,18 @@ package ru.gb.ilyashuk.homework6;
 
 import java.io.PrintStream;
 
-public class Cat extends Animal{
-    static int countCat;
-    static int countCatIsFinish;
+public class Cat extends Animal {
+   private static int countCat;
+
+    public static int getCountCat() {
+        return countCat;
+    }
+
+    public static int getCountCatIsFinish() {
+        return countCatIsFinish;
+    }
+
+    private static int countCatIsFinish;
     int maxRun = 200;
     int maxSwim = 0;
 

@@ -1,8 +1,12 @@
 package ru.gb.ilyashuk.homework6;
 
 public abstract class Animal {
-    static int countAnimal;
+    private static int countAnimal;
     private String name;
+
+    public static int getCountAnimal() {
+        return countAnimal;
+    }
 
     public String getName() {
         return this.name;
