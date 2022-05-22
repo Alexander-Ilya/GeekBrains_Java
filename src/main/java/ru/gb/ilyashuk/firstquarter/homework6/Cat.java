@@ -1,4 +1,4 @@
-package ru.gb.ilyashuk.homework6;
+package ru.gb.ilyashuk.firstquarter.homework6;
 
 import java.io.PrintStream;
 

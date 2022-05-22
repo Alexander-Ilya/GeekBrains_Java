@@ -1,4 +1,7 @@
-package ru.gb.ilyashuk.homemade7;
+package ru.gb.ilyashuk.firstquarter.homemade7;
+
+import ru.gb.ilyashuk.firstquarter.homemade7.Cat;
+import ru.gb.ilyashuk.firstquarter.homemade7.Plate;
 
 public class Task7 {
     public static void main(String[] args) {

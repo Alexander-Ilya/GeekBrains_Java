@@ -1,10 +1,9 @@
-package ru.gb.ilyashuk.homework8;
+package ru.gb.ilyashuk.firstquarter.homework8;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.Locale;
 
 public class MyWindow extends JFrame {
     public MyWindow() {

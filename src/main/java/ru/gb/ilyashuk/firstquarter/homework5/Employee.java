@@ -1,4 +1,4 @@
-package ru.gb.ilyashuk.homework5;
+package ru.gb.ilyashuk.firstquarter.homework5;
 
 public class Employee {
     private String firstName;

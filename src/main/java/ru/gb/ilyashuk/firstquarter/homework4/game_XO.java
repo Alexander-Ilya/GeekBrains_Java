@@ -1,4 +1,4 @@
-package ru.gb.ilyashuk.homework4;
+package ru.gb.ilyashuk.firstquarter.homework4;
 
 import java.util.Arrays;
 import java.util.Random;

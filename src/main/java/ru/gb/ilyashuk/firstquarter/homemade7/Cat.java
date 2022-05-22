@@ -1,4 +1,4 @@
-package ru.gb.ilyashuk.homemade7;
+package ru.gb.ilyashuk.firstquarter.homemade7;
 
 public class Cat {
     private String name;

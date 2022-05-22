@@ -1,4 +1,4 @@
-package ru.gb.ilyashuk.homework3;
+package ru.gb.ilyashuk.firstquarter.homework3;
 
 import java.util.ArrayList;
 import java.util.Arrays;

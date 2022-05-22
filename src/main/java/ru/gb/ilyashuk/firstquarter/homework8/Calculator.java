@@ -1,4 +1,4 @@
-package ru.gb.ilyashuk.homework8;
+package ru.gb.ilyashuk.firstquarter.homework8;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -90,7 +90,7 @@ public class Calculator extends JFrame {
         String[] charArrayNumber = new String[]{"C", "| |", "%", "/", "7", "8", "9", "*", "4", "5", "6", "-", "1", "2", "3", "+", "+/-", "0", ".", "="};
 
         for (String c : charArrayNumber) {
-            JButton jButton = new JButton((c));
+            JButton jButton = new JButton(c);
             numberPanel.add(jButton);
             jButton.addActionListener(listener);
         }

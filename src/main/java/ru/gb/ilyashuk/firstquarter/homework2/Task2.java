@@ -1,4 +1,4 @@
-package ru.gb.ilyashuk.homework2;
+package ru.gb.ilyashuk.firstquarter.homework2;
 
 public class Task2 {
     //1

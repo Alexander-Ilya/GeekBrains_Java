@@ -1,4 +1,4 @@
-package ru.gb.ilyashuk.homework1;
+package ru.gb.ilyashuk.firstquarter.homework1;
 
 public class HomeWorkApp {
     public static void printThreeWords(String text) {
