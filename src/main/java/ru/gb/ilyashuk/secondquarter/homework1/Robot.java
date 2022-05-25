@@ -22,13 +22,13 @@ public class Robot implements Participant {
 
     @Override
     public boolean Run(Let treadmill) {
-        System.out.println(treadmill.getLength() <= maxRun ? jumpTrue : jumpFalse);
+        System.out.println(treadmill.getLength() <= maxRun ? runTrue : runFalse);
         return treadmill.getLength() <= maxRun;
     }
 
     @Override
     public boolean Jump(Let wall) {
-        System.out.println(wall.getHeight() <= maxJump ? runTrue : runFalse);
+        System.out.println(wall.getHeight() <= maxJump ? jumpTrue : jumpFalse);
         return wall.getHeight() <= maxJump;
     }
     @Override
