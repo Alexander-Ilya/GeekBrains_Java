@@ -79,10 +79,7 @@ public class Calculator extends JFrame {
                     operation = action;
                     display.setText("0");
                 }
-
             }
-
-
         };
 
 
