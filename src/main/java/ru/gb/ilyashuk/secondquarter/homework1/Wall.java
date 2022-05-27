@@ -1,6 +1,8 @@
 package ru.gb.ilyashuk.secondquarter.homework1;
 
-public class Wall extends Let{
+import javax.swing.*;
+
+public class Wall implements Let {
     private int height;
 
     public Wall(int height) {
@@ -10,8 +12,10 @@ public class Wall extends Let{
     }
 
     @Override
-    public int getHeight() {
-        return height;
+    public boolean isWin(Participant p) {
+        System.out.println("jump");
+        return p.jump(height);
+
     }
 
     @Override
@@ -20,4 +24,6 @@ public class Wall extends Let{
                 "height=" + height +
                 '}';
     }
+
+
 }

@@ -21,17 +21,19 @@ public class Cat implements Participant {
         idCounter++;
     }
 
+
     @Override
-    public boolean Run(Let treadmill) {
-        System.out.println(treadmill.getLength() <= maxRun ? runTrue : runFalse);
-        return treadmill.getLength() <= maxRun;
+    public boolean run(int length) {
+        System.out.println((length <= maxRun) ? runTrue : runFalse);
+        return length <= maxRun;
     }
 
     @Override
-    public boolean Jump(Let wall) {
-        System.out.println(wall.getHeight() <= maxJump ? jumpTrue : jumpFalse);
-        return wall.getHeight() <= maxJump;
+    public boolean jump(int height) {
+        System.out.println((height <= maxJump) ? jumpTrue : jumpFalse);
+        return height <= maxJump;
     }
+
 
     @Override
     public String toString() {
@@ -41,4 +43,6 @@ public class Cat implements Participant {
                 ", id=" + id +
                 '}';
     }
+
+
 }
