@@ -3,6 +3,7 @@ package ru.gb.ilyashuk.secondquarter.homework1;
 public class Robot implements Participant {
     private int maxRun;
     private int maxJump;
+    boolean participant = true;
     private static int idCounter = 1;
     private int id = idCounter;
     private String runTrue = "Робот" + id + " успешно пробежал";
@@ -22,14 +23,23 @@ public class Robot implements Participant {
 
     @Override
     public boolean run(int length) {
-        System.out.println((length <= maxRun) ? runTrue : runFalse);
-        return length <= maxRun;
+        if (participant()){
+            System.out.println((length <= maxRun) ? runTrue : runFalse);
+        participant = (length <= maxRun);}
+        return participant;
     }
 
     @Override
     public boolean jump(int height) {
-        System.out.println((height <= maxJump) ? jumpTrue : jumpFalse);
-        return height <= maxJump;
+        if (participant()){
+            System.out.println((height <= maxJump) ? jumpTrue : jumpFalse);
+        participant = (height <= maxJump);}
+        return participant;
+    }
+
+    @Override
+    public boolean participant() {
+        return participant;
     }
 
     @Override

@@ -23,7 +23,7 @@ public class Main {
             System.out.println(participant);
             for (Let let : lets) {
                 System.out.println(let);
-                if (!let.isWin(participant)) break;
+                let.isWin(participant);
 
 
             }
