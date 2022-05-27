@@ -23,20 +23,7 @@ public class Main {
             System.out.println(participant);
             for (Let let : lets) {
                 System.out.println(let);
-                //Вопрос преподавателю :)
-                // Нижележащую проверку принадлежности к классу надо делать тут ( в мейне)
-//                или надо убирать в сами классы ( в Robot, Human, Cat)?
-                // И есть ли вариант обойтись без проверки, тоесть,
-                // если из массива приходит стена, то сразу вызывается метод Jump?
-                if (let instanceof Wall) {
-                    if (!participant.Jump(let)) {
-                        break;
-                    }
-                } else {
-                    if (!participant.Run(let)) {
-                        break;
-                    }
-                }
+                if (!let.isWin(participant)) break;
 
 
             }

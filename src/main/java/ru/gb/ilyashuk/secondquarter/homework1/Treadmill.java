@@ -1,6 +1,6 @@
 package ru.gb.ilyashuk.secondquarter.homework1;
 
-public class Treadmill extends Let {
+public class Treadmill implements Let {
     private int length;
 
     public Treadmill(int length) {
@@ -10,8 +10,9 @@ public class Treadmill extends Let {
     }
 
     @Override
-    public int getLength() {
-        return length;
+    public boolean isWin(Participant p) {
+        System.out.println("run");
+        return p.run(this.length);
     }
 
     @Override
@@ -20,4 +21,6 @@ public class Treadmill extends Let {
                 "length=" + length +
                 '}';
     }
+
+
 }

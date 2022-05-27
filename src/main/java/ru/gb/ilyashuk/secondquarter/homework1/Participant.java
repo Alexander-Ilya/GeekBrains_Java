@@ -2,8 +2,9 @@ package ru.gb.ilyashuk.secondquarter.homework1;
 
 public interface Participant {
 
-    boolean Run(Let treadmill);
+    boolean run(int length);
 
-    boolean Jump(Let wall);
+    boolean jump(int height);
+
 
 }
