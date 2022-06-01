@@ -1,4 +1,4 @@
-package ru.gb.ilyashuk.firstquarter.homemade7;
+package ru.gb.ilyashuk.firstquarter.homework7;
 
 public class Plate {
     private int food;
