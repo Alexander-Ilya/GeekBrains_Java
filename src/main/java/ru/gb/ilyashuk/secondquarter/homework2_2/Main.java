@@ -30,23 +30,20 @@ public class Main {
 
         };
         try {
-            try {
-                //int result = test.arrayTest(valid);
-                // int result = test.arrayTest(invalidOne);
-                // int result = test.arrayTest(invalidTwo);
-                int result = test.arrayTest(invalidThree);
-                System.out.println("result = " + result);
-            } catch (MyArraySizeException e) {
-                System.out.println("Размер массива не корректен");
-                e.printStackTrace();
-            }
+            //int result = test.arrayTest(valid);
+            // int result = test.arrayTest(invalidOne);
+            // int result = test.arrayTest(invalidTwo);
+            int result = test.arrayTest(invalidThree);
+            System.out.println("result = " + result);
+        } catch (MyArraySizeException e) {
+            System.out.println("Размер массива не корректен");
+            e.printStackTrace();
         } catch (MyArrayDataException e) {
-            System.out.println("Ошибка данных в ячейке [" + e.i + "] [" + e.j + "]" + ", В ней значение \"" + e.s[e.i][e.j] + "\"");
+            System.out.println("Ошибка данных в ячейке [" + e.getI() + "] [" + e.getJ() + "]" + ", В ней значение \"" + e.getS()[e.getI()][e.getJ()] + "\"");
             e.printStackTrace();
         }
+
     }
-
-
     public int arrayTest(String[][] array) throws MyArraySizeException, MyArrayDataException {
         int count = 0;
         if (array.length != 4) {
