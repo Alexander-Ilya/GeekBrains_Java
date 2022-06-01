@@ -5,8 +5,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Phonebook {
-    Map<String, ArrayList<String>> phonebook = new HashMap<>();
-    ArrayList<String> list = new ArrayList<>();
+    private final Map<String, ArrayList<String>> phonebook = new HashMap<>();
+    private ArrayList<String> list = new ArrayList<>();
 
 
     void add(String name, String phone) {
