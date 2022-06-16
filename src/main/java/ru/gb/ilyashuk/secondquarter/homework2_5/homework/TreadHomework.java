@@ -39,13 +39,15 @@ public class TreadHomework {
                     startTime) + " ms.");
         });
         threadOne.start();
-        threadOne.join();
+
         Thread threadTwo = new Thread(() -> {
             calculation(arrRight);
             System.out.println("arrRight thread time: " + (System.currentTimeMillis() -
                     startTime) + " ms.");
         });
         threadTwo.start();
+
+        threadOne.join();
         threadTwo.join();
 
 
